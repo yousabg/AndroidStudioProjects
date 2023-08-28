@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/unique_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#6E0505"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/previousButton"
+        app:layout_constraintTop_toTopOf="@+id/separator" />
+
+    <TextView
+        android:id="@+id/separator"
+        android:layout_width="1dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        app:layout_constraintStart_toEndOf="@+id/unique_id"
+        app:layout_constraintTop_toBottomOf="@+id/queryButton" />
+
+    <TextView
+        android:id="@+id/gnameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/previousButton"
+        app:layout_constraintTop_toBottomOf="@+id/queryButton" />
+
+    <TextView
+        android:id="@+id/a1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/a2TextView"
+        app:layout_constraintStart_toEndOf="@+id/previousButton"
+        app:layout_constraintTop_toBottomOf="@+id/gnameTextView" />
+
+    <TextView
+        android:id="@+id/a2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="92dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/previousButton"
+        app:layout_constraintTop_toBottomOf="@+id/queryButton" />
+
+    <TextView
+        android:id="@+id/a3TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toBottomOf="@+id/queryButton" />
+
+    <TextView
+        android:id="@+id/a4TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ulTextView"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toBottomOf="@+id/a3TextView" />
+
+    <TextView
+        android:id="@+id/ulTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton"
+        app:layout_constraintTop_toBottomOf="@+id/queryButton" />
+
+    <TextView
+        android:id="@+id/baseDmgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+        app:layout_constraintStart_toEndOf="@+id/previousButton" />
+
+    <TextView
+        android:id="@+id/specialDmgTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+        app:layout_constraintEnd_toStartOf="@+id/nextButton" />
+
+    <TextView
+        android:id="@+id/gNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="17dp"
+        android:text="God Name: "
+        app:layout_constraintEnd_toStartOf="@+id/gname"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/gname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:ems="10"
+        android:hint="God Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </EditText>
+
+    <EditText
+        android:id="@+id/a1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ability One"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/gname"
+        app:layout_constraintTop_toBottomOf="@+id/gname" />
+
+    <TextView
+        android:id="@+id/a1Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="Ability One:"
+        app:layout_constraintEnd_toStartOf="@+id/a1"
+        app:layout_constraintTop_toBottomOf="@+id/gNameLabel" />
+
+    <EditText
+        android:id="@+id/a2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ability Two"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/a1"
+        app:layout_constraintTop_toBottomOf="@+id/a1" />
+
+    <TextView
+        android:id="@+id/a2Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="Ability Two:"
+        app:layout_constraintEnd_toStartOf="@+id/a2"
+        app:layout_constraintTop_toBottomOf="@+id/a1Label" />
+
+    <EditText
+        android:id="@+id/a3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ability Three"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/a2"
+        app:layout_constraintTop_toBottomOf="@+id/a2" />
+
+    <TextView
+        android:id="@+id/a3Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="Ability Three:"
+        app:layout_constraintEnd_toStartOf="@+id/a2"
+        app:layout_constraintTop_toBottomOf="@+id/a2Label" />
+
+    <EditText
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ability Four"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/a3"
+        app:layout_constraintTop_toBottomOf="@+id/a3" />
+
+    <TextView
+        android:id="@+id/a4Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="Ability Four:"
+        app:layout_constraintEnd_toStartOf="@+id/a3"
+        app:layout_constraintTop_toBottomOf="@+id/a3Label" />
+
+    <EditText
+        android:id="@+id/ul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ultimate"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/a4"
+        app:layout_constraintTop_toBottomOf="@+id/a4" />
+
+    <TextView
+        android:id="@+id/ulLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="Ultimate:"
+        app:layout_constraintEnd_toStartOf="@+id/a4"
+        app:layout_constraintTop_toBottomOf="@+id/a4Label" />
+
+    <EditText
+        android:id="@+id/baseDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Base DMG"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/ul"
+        app:layout_constraintTop_toBottomOf="@+id/ul" />
+
+    <TextView
+        android:id="@+id/baseDmgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="Base Damage:"
+        app:layout_constraintEnd_toStartOf="@+id/ul"
+        app:layout_constraintTop_toBottomOf="@+id/ulLabel" />
+
+    <EditText
+        android:id="@+id/specialDmg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Special DMG"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/baseDmg"
+        app:layout_constraintTop_toBottomOf="@+id/baseDmg" />
+
+    <TextView
+        android:id="@+id/specialDmgLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="18dp"
+        android:text="SPC Damage:"
+        app:layout_constraintEnd_toStartOf="@+id/baseDmg"
+        app:layout_constraintTop_toBottomOf="@+id/baseDmgLabel" />
+
+    <Button
+        android:id="@+id/insertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insert"
+        app:layout_constraintBaseline_toBaselineOf="@+id/updateButton"
+        app:layout_constraintStart_toStartOf="@+id/specialDmg" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        app:layout_constraintStart_toEndOf="@+id/insertButton"
+        app:layout_constraintTop_toBottomOf="@+id/specialDmg" />
+
+    <Button
+        android:id="@+id/queryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="4dp"
+        android:text="Query"
+        app:layout_constraintStart_toStartOf="@+id/insertButton"
+        app:layout_constraintTop_toBottomOf="@+id/insertButton" />
+
+    <Button
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:text="Left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/previousButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="91dp"
+        android:text="Delete"
+        app:layout_constraintStart_toStartOf="@+id/previousButton"
+        app:layout_constraintTop_toBottomOf="@+id/previousButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
