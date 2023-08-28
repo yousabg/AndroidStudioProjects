@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/base_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/ticker_list"
+        android:name="com.mobile.tickerwatchlistmanager.TickerListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/fragment_ticker_list" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/web_fragment"
+        android:name="com.mobile.tickerwatchlistmanager.InfoWebFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout = "@layout/fragment_info_web"/>
+</LinearLayout>
