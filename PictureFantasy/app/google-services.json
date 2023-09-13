@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "393513304064",
+    "project_id": "picturefantasy-d1407",
+    "storage_bucket": "picturefantasy-d1407.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393513304064:android:bef5ea107e14061f18d8e5",
+        "android_client_info": {
+          "package_name": "com.mobile.picturefantasy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393513304064-jqjfvchji0nqbm4b7bvucenefvib44b3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9pPG4V3soWgfR9ARWSRn5ukrNlhRKK_A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393513304064-jqjfvchji0nqbm4b7bvucenefvib44b3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
