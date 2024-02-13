@@ -11,8 +11,15 @@ This repository hosts a collection of mobile applications developed during my Mo
   - SQL Database Simulation
 
 ### PictureFantasy (Final Project)
-![Picture Fantasy Lobby](https://github.com/yousabg/AndroidStudioProjects/blob/master/lobby.jpg?raw=true)
-![Picture Fantasy Main Screen](https://github.com/yousabg/AndroidStudioProjects/blob/master/main.jpg?raw=true)
+<p float="left">
+  <img src="https://github.com/yousabg/AndroidStudioProjects/blob/master/lobby.jpg?raw=true" width="250" alt="Picture Fantasy Lobby" />
+  <em>Lobby</em>
+</p>
+<p float="left">
+  <img src="https://github.com/yousabg/AndroidStudioProjects/blob/master/main.jpg?raw=true" width="250" alt="Picture Fantasy Main Screen" />
+  <em>Main</em>
+</p>
+
 - **Description**: For my final project, I leveraged everything learned in the class to create a mobile game. In this game, friends race to see who can capture a photo of a specified object or place first.
 - **Key Features**:
   - Integration with Google Firebase
